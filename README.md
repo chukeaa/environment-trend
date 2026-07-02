@@ -30,10 +30,10 @@ npm run build
 npm run preview
 ```
 
-`npm run build` 会生成 `dist/`，用于本地检查或后续切换到 Actions 部署。
+`npm run build` 会生成 `dist/`，用于本地检查和 GitHub Pages 发布。
 
 ## GitHub Pages 发布
 
-推荐在 GitHub Pages 设置里选择 `GitHub Actions` 作为发布来源。仓库根目录就是前端项目，workflow 会运行 `npm run validate` 和 `npm run build`，并发布 `dist/`。
+GitHub Pages 发布来源使用 `gh-pages` 分支的根目录。`main` 分支仍然是完整前端项目根目录；workflow 会运行 `npm run validate` 和 `npm run build`，再把 `dist/` 推送到 `gh-pages` 分支。
 
 `dist/` 是构建产物，不需要提交。
