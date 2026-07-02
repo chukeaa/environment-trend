@@ -34,6 +34,6 @@ npm run preview
 
 ## GitHub Pages 发布
 
-推荐把 GitHub Pages source 设为当前分支的 `/` 根目录，因为 `index.html` 本身就是可直接托管的静态页面。
+推荐在 GitHub Pages 设置里选择 `GitHub Actions` 作为发布来源。仓库根目录就是前端项目，workflow 会运行 `npm run validate` 和 `npm run build`，并发布 `dist/`。
 
-当前发布方式不需要提交 `dist/`。
+`dist/` 是构建产物，不需要提交。
