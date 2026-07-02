@@ -1,0 +1,16 @@
+{
+  "name": "environment-sustainability-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Responsive static dashboard for environment sustainability evidence.",
+  "scripts": {
+    "dev": "python3 -m http.server 5173 --directory .",
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "python3 -m http.server 4173 --directory dist"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
