@@ -37,4 +37,6 @@ npm run preview
 
 ## GitHub Pages 发布
 
-推荐使用仓库根目录下的 `.github/workflows/pages.yml`，在 GitHub Pages 设置里选择 `GitHub Actions` 作为发布来源。也可以直接把 Pages source 设为当前分支的 `/docs` 目录，因为 `docs/index.html` 本身就是可直接托管的静态页面。
+推荐把 GitHub Pages source 设为当前分支的 `/docs` 目录，因为 `docs/index.html` 本身就是可直接托管的静态页面。
+
+`npm run build` 生成的 `docs/dist/` 主要用于本地检查或后续切换到 Actions 部署时使用，当前 GitHub Pages 发布不需要提交 `dist/`。
