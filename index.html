@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="环境专业,政策,岗位,就业方向,环境可持续">
+  <title>环境专业：政策动态与就业方向</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./assets/css/dashboard.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <h1>环境专业：政策动态与就业方向</h1>
+    </header>
+
+    <section class="layout">
+      <section class="block" aria-labelledby="policyTitle">
+        <div class="block-head">
+          <div class="block-title-row">
+            <h2 class="block-title" id="policyTitle">政策动态</h2>
+            <span class="count-pill">2026年上半年</span>
+          </div>
+        </div>
+        <div class="block-body" id="policyList"></div>
+      </section>
+
+      <section class="block" aria-labelledby="evidenceTitle">
+        <div class="block-head">
+          <div class="block-title-row">
+            <h2 class="block-title" id="evidenceTitle">就业方向与行业趋势</h2>
+            <span class="count-pill">共 <span id="evidenceTotal">0</span> 项</span>
+          </div>
+          <div class="toolbar">
+            <select class="select" id="evidenceType"></select>
+            <select class="select" id="evidenceRegion"></select>
+            <select class="select" id="evidenceFamily"></select>
+            <button class="btn" id="clearEvidence" type="button">重置</button>
+          </div>
+        </div>
+        <div class="block-body">
+          <div class="trend-summary" id="trendSummary"></div>
+          <div id="evidenceList"></div>
+        </div>
+      </section>
+    </section>
+
+  </main>
+
+  <script src="./assets/js/dashboard-data.js"></script>
+  <script src="./assets/js/dashboard.js"></script>
+</body>
+</html>
